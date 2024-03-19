@@ -1,0 +1,29 @@
+#welcome {
+  text-align: center;
+  max-width: 500px;
+  flex: 1;
+  margin-top: 5rem;
+}
+
+#welcome h2 {
+  font-size: 2rem;
+}
+
+#welcome h2,
+#welcome p {
+  margin-bottom: 1rem;
+}
+
+#welcome p {
+  color: #f2edea;
+}
+
+#welcome picture {
+  display: block;
+  margin-bottom: 2rem;
+}
+
+#welcome img {
+  margin-top: 2rem;
+  height: 60px;
+}

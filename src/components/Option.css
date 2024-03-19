@@ -1,0 +1,35 @@
+.option {
+  background: #0074b9;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  transition: 0.4s;
+  line-height: 1.5;
+  color: inherit;
+}
+
+.option:hover,
+.option:focus {
+  background: #06649b;
+}
+
+#options-container .option p {
+  margin-bottom: 0;
+  color: inherit;
+}
+
+.correct {
+  background: #dc2626;
+  color: #fff;
+  font-weight: bold;
+}
+
+.correct:hover,
+.correct:focus {
+  background: #dc2626;
+}
+
+.wrong {
+  opacity: 0.4;
+}

@@ -1,0 +1,43 @@
+#question {
+  text-align: center;
+  max-width: 500px;
+  background: #fff;
+  border-radius: 1rem;
+  padding: 1.25rem;
+  padding: 1rem;
+}
+
+#question h2 {
+  margin-bottom: 1rem;
+}
+
+#question p {
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+#question .subtitle {
+  font-weight: 500;
+  color: #0074b9;
+}
+
+#question .title {
+  color: #555;
+  font-size: 0.875rem;
+}
+
+#question .title strong {
+  color: inherit;
+}
+
+#question button {
+  border: 2px solid #fff;
+}
+
+#question .description {
+  color: #222;
+}
+
+#question .description > * {
+  color: inherit;
+}
