@@ -8,9 +8,6 @@ const Welcome = () => {
 
   return (
     <div id="welcome">
-      {/* <picture>
-        <img src={Logo} alt="Generation Brasil" />
-      </picture> */}
       <h2>Seja bem-vinde</h2>
       <p>Clique no botão abaixo para começar:</p>
       <button onClick={() => dispatch({ type: "CHANGE_STATE" })}>
