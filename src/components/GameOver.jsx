@@ -7,7 +7,7 @@ import "./GameOver.css";
 
 const GameOver = () => {
   const [quizState, dispatch] = useContext(QuizContext);
-  const questionsAnswered = quizState.currentQuestion + 1;
+  const questionsAnswered = quizState.currentQuestion === 20 ? quizState.currentQuestion : quizState.currentQuestion + 1;
 
   return (
     <div id="gameover">
