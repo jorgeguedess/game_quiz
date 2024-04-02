@@ -21,3 +21,8 @@
 .App picture img {
   height: 3rem;
 }
+
+.play-game {
+  display: flex;
+  flex-direction: column-reverse;
+}

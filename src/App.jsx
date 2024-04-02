@@ -21,17 +21,13 @@ function App() {
 
   return (
     <div className="App">
+      {quizState.gameStage === "Playing" && <Stop />}
       <picture>
         <img src={Logo} alt="Generation Brasil" />
       </picture>
       <h1>2 Fatos, 1 Mentira</h1>
       {quizState.gameStage === "Start" && <Welcome />}
-      {quizState.gameStage === "Playing" && (
-        <>
-          <Question />
-          <Stop />
-        </>
-      )}
+      {quizState.gameStage === "Playing" && <Question />}
       {quizState.gameStage === "End" && <GameOver />}
     </div>
   );
