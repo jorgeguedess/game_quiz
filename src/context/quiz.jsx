@@ -11,6 +11,8 @@ const initialState = {
   answerSelected: false,
 };
 
+let endGame = false;
+
 const quizReducer = (state, action) => {
   switch (action.type) {
     case "CHANGE_STATE":
@@ -30,7 +32,7 @@ const quizReducer = (state, action) => {
 
     case "CHANGE_QUESTION":
       const nextQuestion = state.currentQuestion + 1;
-      let endGame = false;
+      endGame = false;
 
       if (!questions[nextQuestion]) {
         endGame = true;
@@ -39,6 +41,15 @@ const quizReducer = (state, action) => {
       return {
         ...state,
         currentQuestion: nextQuestion,
+        gameStage: endGame ? STAGES[2] : state.gameStage,
+        answerSelected: false,
+      };
+
+    case "STOP_GAME":
+      endGame = true;
+      return {
+        ...state,
+        currentQuestion: state.currentQuestion,
         gameStage: endGame ? STAGES[2] : state.gameStage,
         answerSelected: false,
       };

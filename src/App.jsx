@@ -5,6 +5,7 @@ import { QuizContext } from "./context/quiz";
 import Welcome from "./components/Welcome";
 import Question from "./components/Question";
 import GameOver from "./components/GameOver";
+import Stop from "./components/Stop";
 
 import Logo from "/logo.svg";
 
@@ -25,7 +26,12 @@ function App() {
       </picture>
       <h1>2 Fatos, 1 Mentira</h1>
       {quizState.gameStage === "Start" && <Welcome />}
-      {quizState.gameStage === "Playing" && <Question />}
+      {quizState.gameStage === "Playing" && (
+        <>
+          <Question />
+          <Stop />
+        </>
+      )}
       {quizState.gameStage === "End" && <GameOver />}
     </div>
   );

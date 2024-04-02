@@ -1,0 +1,9 @@
+.stop {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+}
+
+.btn-stop {
+  background: #292336;
+}

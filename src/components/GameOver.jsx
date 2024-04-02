@@ -7,6 +7,7 @@ import "./GameOver.css";
 
 const GameOver = () => {
   const [quizState, dispatch] = useContext(QuizContext);
+  const questionsAnswered = quizState.currentQuestion + 1;
 
   return (
     <div id="gameover">
@@ -14,7 +15,7 @@ const GameOver = () => {
       <p>Pontuação: {quizState.score}</p>
       <p>
         Você acertou <strong>{quizState.score}</strong> de{" "}
-        <strong>{quizState.questions.length}</strong> perguntas.
+        <strong>{questionsAnswered}</strong> perguntas.
       </p>
       <img src={WellDone} alt="Fim do Quiz" />
       <button onClick={() => dispatch({ type: "NEW_GAME" })}>Reiniciar</button>
